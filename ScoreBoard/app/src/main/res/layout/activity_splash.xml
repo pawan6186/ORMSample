@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/material_margin"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/splashAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/splashAppTitle"/>
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splashAppTitle"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/company_name"
+            android:textSize="@dimen/text_large"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:textColor="@android:color/black"
+        />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/loading"
+            android:textSize="@dimen/splashAppText"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

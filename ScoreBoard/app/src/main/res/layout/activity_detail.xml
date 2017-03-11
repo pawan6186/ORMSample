@@ -1,0 +1,184 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context="com.assignment.pawan.soreboard.activities.HomeActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+
+            >
+
+
+                <com.android.volley.toolbox.NetworkImageView android:id="@+id/image"
+                                                             android:layout_width="match_parent"
+                                                             android:layout_height="200dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_normal"
+                >
+                    <TextView
+                        android:id="@+id/name_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+                        android:textStyle="bold"
+                    />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_normal"
+                >
+                    <TextView
+                        android:id="@+id/country_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Country"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+                        android:textStyle="bold"
+                    />
+
+                    <TextView
+                        android:id="@+id/country"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_normal"
+                >
+                    <TextView
+                        android:id="@+id/total_match_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Match"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+                        android:textStyle="bold"
+                    />
+
+                    <TextView
+                        android:id="@+id/total_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_normal"
+                >
+                    <TextView
+                        android:id="@+id/total_score_label"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total Score"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+                        android:textStyle="bold"
+                    />
+
+                    <TextView
+                        android:id="@+id/total_core"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/list_heading"
+
+                    />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/description_lable"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/padding_normal"
+                    android:text="Description"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/list_heading"
+                    android:textStyle="bold"
+                />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/padding_normal"
+                    android:text=""
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/list_heading"
+
+                />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
